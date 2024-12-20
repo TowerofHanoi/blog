@@ -1,61 +1,30 @@
----
-layout: default
----
-<div class="container-fluid index">
-    <div class="row">
-        <div class="col-md-12 col-lg-12 main content-panel">
-            <div class="gravatar">
-                <a href="{{ site.url }}"><img src="{{ site.home_image }}" class="about-image" alt="{{ site.title }}" /></a>
-            </div>
-
-            <h1 class="header author-header" itemprop="headline">
-                <img src="{{ site.logo_brand }}" alt="{{ site.title }}" style="display: block; width: 80%; max-width: 500px; margin: 0 auto;" />
-            </h1>
-
-            <div class="author-text">
-                {{ site.title_description }}
-            </div>
-
-            <div class="links-wrapper"><a class="btn btn-primary" role="button" href="/about">Who are we?</a>
-
-            <div class="links" style="float: right;">
-                <!-- <a href="/search.html"><i class="fa fa-search fa-2x"></i></a> -->
-                {% if site.twitter_username %}<a href="http://www.twitter.com/{{ site.twitter_username }}" target="_new"><i class="fa fa-twitter fa-2x"></i></a>{% endif %}
-                {% if site.linkedin_link %}<a href="{{ site.linkedin_link }}" target="_new"><i class="fa fa-linkedin fa-2x"></i></a>{% endif %}
-                {% if site.google_plus_link %}<a href="{{ site.google_plus_link }}" target="_new"><i class="fa fa-google-plus fa-2x"></i></a>{% endif %}
-                {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_new"><i class="fa fa-github-alt fa-2x"></i></a>{% endif %}
-                {% if site.stackoverflow_link %}<a href="{{ site.stackoverflow_link }}" target="_new"><i class="fa fa-stack-overflow fa-2x"></i></a>{% endif %}
-                <a href="feed.xml" target="_new"><i class="fa fa-rss fa-2x"></i></a>
-            </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="col-md-12 main content-panel">
-                <div class="col-md-8 articles">
-                    <h2>Latest <strike>Articles</strike> CTF writeups</h2>
-                    <ul>
-                        {% for post in site.posts | limit: site.post_limit %}
-                        <li>
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                            <br> 
-                            <span class="post-date">{{ post.date | date: "%B %-d, %Y" }} by {% if post.author %}{{ post.author }}{% else %}ToH Team{% endif %} &middot; <a href="{{ post.url }}#disqus_thread" style="color: #969696;"></a></span>
-                            <br>
-                            <span class="post-summary">In short: {{post.summary}}</span>
-                        </li>
-                        <hr>
-                        {% endfor %}
-                        <li>
-                            <small><i><a href="/posts">more...</a></i></small>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <a class="twitter-timeline"
-                     data-dnt="true" data-chrome="transparent noscrollbar nofooter noborders" data-height="800" data-link-color="#ffa500" data-theme="dark"
-                       href="https://twitter.com/towerofhanoi">Tweets by towerofhanoi</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="0; url=https://towerofhanoi.it">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Source Code Pro, monospace;
+            font-size: 2rem;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <img src="./tower_nocerchio.png" alt="Tower of Hanoi logo" style="width: 7rem; height: auto; margin: 2rem;">
+    
+    <h1>Loading new website...</h1>
+</body>
+</html>
